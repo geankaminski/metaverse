@@ -14,4 +14,4 @@ This project can be used in VR mode. To do this, you must have a VR headset and 
 
 ## How to run
 
-To run this project, you must run a local server. You can use the Live Server extension for VSCode or any other local server.
+To run this project, you must run a local server. You can use the Live Server extension for VSCode or any other local server. Metamask is required too.
