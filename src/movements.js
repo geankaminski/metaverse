@@ -12,12 +12,10 @@ class KeyMovements {
     down(e) {
         if (this.movement[e.keyCode]) return;
         this.movement[e.keyCode] = true;
-        console.log('down', e.key, "KeyCode:", e.keyCode);
     }
 
     up(e) {
         this.movement[e.keyCode] = false;
-        console.log('up', e.key, "KeyCode:", e.keyCode);
     }
 }
 

@@ -1,14 +1,15 @@
-import abi from './abi/abi.json'
+import abi from './abi/abi.json' assert {type: "json"};
 
-// 0x2c2D22431e249EdFB5f9e7F04bDb7c7d60Fb2d6c (Polygon Mumbai Testnet)
+// 0xD02a5682FBace8D8BBe4F95E5EdD53A996D3c153 (Polygon Mumbai Testnet)
 
 const blockchain = new Promise((res, rej) => {
+    
     if (typeof window.ethereum === "undefined") {
         rej("Please install MetaMask")
     }
 
     let web3 = new Web3(window.ethereum);
-    let contract = new web3.eth.Contract(abi, "0x2c2D22431e249EdFB5f9e7F04bDb7c7d60Fb2d6c");
+    let contract = new web3.eth.Contract(abi, "0xD02a5682FBace8D8BBe4F95E5EdD53A996D3c153");
 
     web3.eth.requestAccounts().then((accounts) => {
         console.log("--> My account is: ", accounts[0])
