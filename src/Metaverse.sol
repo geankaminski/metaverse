@@ -9,7 +9,7 @@ import "@openzeppelin/contracts@4.4.2/utils/Counters.sol";
 // Creation of the Metaverse Smart Contract with NFT Tokens
 contract Metaverse is ERC721, Ownable {
     // Constructor
-    constructor() ERC721("META", "MGK") {}
+    constructor() ERC721("META", "MJG") {}
 
     // Counters to regulate the current amount of NFT Tokens minted
     using Counters for Counters.Counter;
@@ -19,7 +19,7 @@ contract Metaverse is ERC721, Ownable {
     uint256 public maxSupply = 100;
 
     // Cost to be paid for each NFT Token
-    // uint256 public cost = 1 ether;
+    // uint256 public cost = 0.1 ether;
     uint256 public cost = 0 wei;
 
     // Owner and its properties in the Metaverse
